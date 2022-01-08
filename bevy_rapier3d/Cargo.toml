@@ -32,7 +32,7 @@ enhanced-determinism = [ "rapier3d/enhanced-determinism" ]
 bevy = { version = "0.5", default-features = false }
 nalgebra = { version = "0.29", features = [ "convert-glam013" ] }
 # Don't enable the default features because we don't need the ColliderSet/RigidBodySet
-rapier3d = { git = "https://github.com/tjamaan/rapier/", commit = "2e344c4e7958b90aaad50d4b4ae131adf82ad104", default-features = false, features = [ "dim3", "f32" ] }
+rapier3d = { git = "https://github.com/tjamaan/rapier/", branch = "fix_RigidBodyVelocity_rotation_center", commit = "2e344c4e7958b90aaad50d4b4ae131adf82ad104", default-features = false, features = [ "dim3", "f32" ] }
 
 [dev-dependencies]
 bevy_wgpu = "0.5"
